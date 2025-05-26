@@ -1,9 +1,185 @@
-# HAit 广告传媒
-
-<div align="center">
-  <span style="color:blue; font-size:20px">涉及业务如下:</span>
-</div>
-
-- <span style="color:green">品牌策划</span>
-- <span style="color:#FFA500">数字营销</span>
-- <span style="color:purple">媒体投放</span>
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HAit 广告传媒</title>
+    <style>
+        body {
+            font-family: 'Microsoft YaHei', sans-serif;
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+            margin: 0;
+            padding: 20px;
+        }
+        
+        .company-card {
+            max-width: 800px;
+            margin: 30px auto;
+            background: white;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            position: relative;
+        }
+        
+        .header {
+            background: linear-gradient(90deg, #1e3c72 0%, #2a5298 100%);
+            color: white;
+            padding: 30px;
+            text-align: center;
+            position: relative;
+        }
+        
+        .logo {
+            width: 100px;
+            height: 100px;
+            background-color: white;
+            border-radius: 50%;
+            margin: 0 auto 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+        }
+        
+        .logo img {
+            width: 80%;
+            height: 80%;
+            object-fit: contain;
+        }
+        
+        h1 {
+            margin: 0;
+            font-size: 2.5em;
+            letter-spacing: 2px;
+        }
+        
+        .tagline {
+            font-style: italic;
+            opacity: 0.9;
+            margin-top: 10px;
+        }
+        
+        .services {
+            padding: 30px;
+        }
+        
+        .service {
+            display: flex;
+            align-items: center;
+            margin-bottom: 25px;
+            padding: 20px;
+            border-radius: 10px;
+            transition: all 0.3s ease;
+        }
+        
+        .service:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+        
+        .service-icon {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: 20px;
+            flex-shrink: 0;
+            color: white;
+            font-size: 24px;
+        }
+        
+        .service-content h3 {
+            margin: 0 0 10px 0;
+            font-size: 1.3em;
+        }
+        
+        .service-content p {
+            margin: 0;
+            color: #666;
+            line-height: 1.5;
+        }
+        
+        .branding {
+            background-color: #4CAF50;
+        }
+        
+        .digital {
+            background-color: #FF9800;
+        }
+        
+        .media {
+            background-color: #9C27B0;
+        }
+        
+        .footer {
+            background: #f9f9f9;
+            padding: 20px;
+            text-align: center;
+            color: #777;
+            font-size: 0.9em;
+        }
+        
+        .decoration {
+            position: absolute;
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            background: rgba(255, 255, 255, 0.1);
+            top: -50px;
+            right: -50px;
+        }
+    </style>
+</head>
+<body>
+    <div class="company-card">
+        <div class="decoration"></div>
+        <div class="header">
+            <div class="logo">
+                <!-- 在这里插入公司logo图片 -->
+                <img src="logo.png" alt="HAit Logo">
+            </div>
+            <h1>HAit 广告传媒</h1>
+            <div class="tagline">创新传播 · 精准营销 · 卓越品牌</div>
+        </div>
+        
+        <div class="services">
+            <div class="service">
+                <div class="service-icon branding">
+                    <i>B</i>
+                </div>
+                <div class="service-content">
+                    <h3 style="color: #4CAF50;">品牌策划</h3>
+                    <p>从品牌定位到视觉识别系统，我们提供全方位的品牌策划服务，帮助您的品牌在市场中脱颖而出，建立独特的品牌形象和价值观。</p>
+                </div>
+            </div>
+            
+            <div class="service">
+                <div class="service-icon digital">
+                    <i>D</i>
+                </div>
+                <div class="service-content">
+                    <h3 style="color: #FF9800;">数字营销</h3>
+                    <p>通过SEO、社交媒体营销、内容营销等多元化数字渠道，精准触达目标受众，提升品牌曝光度和转化率，实现营销效果最大化。</p>
+                </div>
+            </div>
+            
+            <div class="service">
+                <div class="service-icon media">
+                    <i>M</i>
+                </div>
+                <div class="service-content">
+                    <h3 style="color: #9C27B0;">媒体投放</h3>
+                    <p>基于大数据分析，制定精准的媒体投放策略，涵盖传统媒体和新媒体平台，确保您的广告信息在最合适的时机传达给最相关的人群。</p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="footer">
+            © 2023 HAit 广告传媒 | 联系电话: 123-456789 | 邮箱: contact@hait-ad.com
+        </div>
+    </div>
+</body>
+</html>
