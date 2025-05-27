@@ -3,44 +3,142 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>数字营销服务 - HAit 广告传媒</title>
-    <link rel="stylesheet" href="css/style.css">
+    <title>数字营销服务 | HAit 传媒</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/responsive.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
-    <div class="service-detail-card">
-        <div class="service-hero" style="background-image: url('../images/digital.jpg')">
-            <div class="service-hero-content">
+    <!-- 导航栏 (同品牌策划页) -->
+
+    <!-- 数字营销英雄区域 -->
+    <header class="service-hero" style="background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('../images/digital.jpg')">
+        <div class="container">
+            <div class="hero-content">
                 <h1>数字营销服务</h1>
-                <p>数据驱动的全渠道数字营销解决方案</p>
+                <p>数据驱动的全渠道数字增长解决方案</p>
             </div>
         </div>
-        
-        <div class="service-detail-content">
-            <a href="index.html" class="back-button">← 返回服务列表</a>
-            
-            <h2>全方位数字营销服务</h2>
-            <p>我们提供从策略制定到执行优化的全流程服务...</p>
-            
-            <div class="feature-list">
-                <div class="feature">
-                    <h3>搜索引擎优化(SEO)</h3>
-                    <p>通过关键词策略、技术优化提升网站排名...</p>
+    </header>
+
+    <!-- 服务详情内容 -->
+    <main class="service-detail">
+        <div class="container">
+            <!-- 面包屑导航 (同品牌策划页) -->
+
+            <!-- 服务概述 -->
+            <section class="service-overview">
+                <div class="overview-grid">
+                    <div class="overview-content">
+                        <h2>全方位数字营销服务</h2>
+                        <p>在数字化时代，有效的数字营销策略是企业增长的关键。我们提供从策略制定到执行优化的全流程数字营销服务，帮助您在各个数字渠道实现最大化的投资回报。</p>
+                        <p>我们的数据驱动方法确保每一分营销预算都花在刀刃上，通过持续测试和优化，实现可持续的业务增长。</p>
+                        <div class="stats-grid">
+                            <div class="stat-item">
+                                <span class="stat-number">+200%</span>
+                                <span class="stat-label">平均客户增长</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-number">5:1</span>
+                                <span class="stat-label">平均ROI</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="overview-image">
+                        <img src="../images/digital-channels.jpg" alt="数字营销渠道">
+                        <div class="image-caption">我们覆盖的全渠道数字营销网络</div>
+                    </div>
                 </div>
-                <div class="feature">
-                    <h3>社交媒体营销</h3>
-                    <p>制定平台专属策略，创作病毒式内容...</p>
+            </section>
+
+            <!-- 服务项目 -->
+            <section class="service-offerings">
+                <h2 class="section-title">我们的数字营销服务</h2>
+                <div class="offerings-tabs">
+                    <div class="tab-buttons">
+                        <button class="tab-btn active" data-tab="seo">SEO优化</button>
+                        <button class="tab-btn" data-tab="social">社交媒体</button>
+                        <button class="tab-btn" data-tab="content">内容营销</button>
+                        <button class="tab-btn" data-tab="ads">数字广告</button>
+                    </div>
+                    <div class="tab-content">
+                        <div class="offering active" id="seo">
+                            <div class="offering-grid">
+                                <div class="offering-info">
+                                    <h3>搜索引擎优化(SEO)</h3>
+                                    <p>通过技术优化、内容建设和链接策略，提升您网站在搜索引擎中的自然排名，获取高质量免费流量。</p>
+                                    <ul class="offering-features">
+                                        <li><i class="fas fa-check-circle"></i> 网站技术SEO审计与优化</li>
+                                        <li><i class="fas fa-check-circle"></i> 关键词研究与内容策略</li>
+                                        <li><i class="fas fa-check-circle"></i> 本地SEO优化</li>
+                                        <li><i class="fas fa-check-circle"></i> 持续排名监控与报告</li>
+                                    </ul>
+                                    <a href="#contact" class="btn btn-outline">获取SEO方案</a>
+                                </div>
+                                <div class="offering-image">
+                                    <img src="../images/seo-process.jpg" alt="SEO优化流程">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="offering" id="social">
+                            <!-- 社交媒体内容 -->
+                        </div>
+                        <!-- 更多服务内容 -->
+                    </div>
                 </div>
-            </div>
-            
-            <div class="case-study">
-                <h3>成功案例：ABC电商增长计划</h3>
-                <p>6个月内实现自然搜索流量增长220%...</p>
-            </div>
+            </section>
+
+            <!-- 我们的方法 -->
+            <section class="our-approach">
+                <h2 class="section-title">我们的数字营销方法论</h2>
+                <div class="approach-steps">
+                    <div class="approach-card">
+                        <div class="step-number">1</div>
+                        <h3>数据分析</h3>
+                        <p>通过Google Analytics、热力图等工具深入分析用户行为和市场趋势</p>
+                    </div>
+                    <div class="approach-card">
+                        <div class="step-number">2</div>
+                        <h3>策略制定</h3>
+                        <p>基于数据洞察，制定多渠道整合的数字营销策略</p>
+                    </div>
+                    <div class="approach-card">
+                        <div class="step-number">3</div>
+                        <h3>创意执行</h3>
+                        <p>制作高质量内容和广告素材，确保品牌一致性</p>
+                    </div>
+                    <div class="approach-card">
+                        <div class="step-number">4</div>
+                        <h3>优化迭代</h3>
+                        <p>持续测试不同变量，优化营销效果</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 工具与技术 -->
+            <section class="tools-technology">
+                <h2 class="section-title">我们使用的工具与技术</h2>
+                <div class="tools-grid">
+                    <div class="tool-card">
+                        <img src="../images/logo-google-analytics.png" alt="Google Analytics">
+                        <h3>Google Analytics</h3>
+                        <p>全面的网站数据分析工具</p>
+                    </div>
+                    <!-- 更多工具卡片 -->
+                </div>
+            </section>
+
+            <!-- 成功案例 (类似品牌策划页) -->
+
+            <!-- 服务咨询 (类似品牌策划页) -->
         </div>
-        
-        <div class="footer">
-            © 2023 HAit 广告传媒 | 联系电话: 123-456789 | 邮箱: contact@hait-ad.com
-        </div>
-    </div>
+    </main>
+
+    <!-- 页脚 (同首页) -->
+
+    <script src="../js/main.js"></script>
+    <script>
+        // 标签切换脚本 (类似品牌策划页)
+    </script>
 </body>
 </html>
