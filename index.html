@@ -3,67 +3,165 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HAit 广告传媒</title>
+    <title>HAit 传媒 | 全方位营销解决方案</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
-    <div class="company-card">
-        <div class="decoration"></div>
-        <div class="header">
-            <div class="logo">
+    <!-- 导航栏 -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="index.html" class="logo">
                 <img src="images/logo.png" alt="HAit Logo">
+                <span>HAit 传媒</span>
+            </a>
+            <div class="menu-toggle" id="mobile-menu">
+                <span></span>
+                <span></span>
+                <span></span>
             </div>
-            <h1>HAit 广告传媒</h1>
-            <div class="tagline">创新传播 · 精准营销 · 卓越品牌</div>
+            <ul class="nav-list">
+                <li><a href="index.html">首页</a></li>
+                <li><a href="#services">服务</a></li>
+                <li><a href="#about">关于我们</a></li>
+                <li><a href="#cases">成功案例</a></li>
+                <li><a href="#contact">联系我们</a></li>
+            </ul>
         </div>
-        
-        <div class="services">
-            <!-- 品牌策划服务 -->
-            <div class="service" onclick="window.location.href='branding.html'">
-                <a class="service-link" href="branding.html">
-                    <div class="service-icon branding">
-                        <i>B</i>
-                    </div>
-                    <div class="service-content">
-                        <h3 style="color: #4CAF50;">品牌策划</h3>
-                        <p>从品牌定位到视觉识别系统，我们提供全方位的品牌策划服务...</p>
-                        <div class="learn-more">了解更多 →</div>
-                    </div>
-                </a>
-            </div>
+    </nav>
+
+    <!-- 英雄区域 -->
+    <header class="hero">
+        <div class="hero-content">
+            <h1>创造令人难忘的品牌体验</h1>
+            <p>我们帮助品牌在数字时代脱颖而出，通过创新策略和精准执行实现业务增长</p>
+            <a href="#contact" class="btn btn-primary">免费咨询</a>
+        </div>
+    </header>
+
+    <!-- 服务展示 -->
+    <section id="services" class="section">
+        <div class="container">
+            <h2 class="section-title">我们的专业服务</h2>
+            <p class="section-subtitle">为您的品牌提供全方位营销解决方案</p>
             
-            <!-- 数字营销服务 -->
-            <div class="service" onclick="window.location.href='digital.html'">
-                <a class="service-link" href="digital.html">
-                    <div class="service-icon digital">
-                        <i>D</i>
+            <div class="services-grid">
+                <!-- 品牌策划 -->
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-bullseye"></i>
                     </div>
-                    <div class="service-content">
-                        <h3 style="color: #FF9800;">数字营销</h3>
-                        <p>通过SEO、社交媒体营销、内容营销等多元化数字渠道...</p>
-                        <div class="learn-more">了解更多 →</div>
+                    <h3>品牌战略</h3>
+                    <p>从品牌定位到视觉识别系统的完整解决方案，打造独特品牌形象</p>
+                    <ul class="service-features">
+                        <li>品牌定位与架构</li>
+                        <li>视觉识别系统设计</li>
+                        <li>品牌故事开发</li>
+                    </ul>
+                    <a href="services/branding.html" class="btn btn-outline">了解更多</a>
+                </div>
+                
+                <!-- 数字营销 -->
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-chart-line"></i>
                     </div>
-                </a>
-            </div>
-            
-            <!-- 媒体投放服务 -->
-            <div class="service" onclick="window.location.href='media.html'">
-                <a class="service-link" href="media.html">
-                    <div class="service-icon media">
-                        <i>M</i>
+                    <h3>数字营销</h3>
+                    <p>通过数据驱动的数字渠道策略，最大化您的在线影响力</p>
+                    <ul class="service-features">
+                        <li>SEO优化</li>
+                        <li>社交媒体营销</li>
+                        <li>内容营销</li>
+                    </ul>
+                    <a href="services/digital.html" class="btn btn-outline">了解更多</a>
+                </div>
+                
+                <!-- 媒体投放 -->
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-ad"></i>
                     </div>
-                    <div class="service-content">
-                        <h3 style="color: #9C27B0;">媒体投放</h3>
-                        <p>基于大数据分析，制定精准的媒体投放策略...</p>
-                        <div class="learn-more">了解更多 →</div>
-                    </div>
-                </a>
+                    <h3>媒体投放</h3>
+                    <p>精准触达目标受众的跨媒体广告解决方案</p>
+                    <ul class="service-features">
+                        <li>程序化广告购买</li>
+                        <li>KOL营销</li>
+                        <li>效果监测与优化</li>
+                    </ul>
+                    <a href="services/media.html" class="btn btn-outline">了解更多</a>
+                </div>
             </div>
         </div>
-        
-        <div class="footer">
-            © 2023 HAit 广告传媒 | 联系电话: 123-456789 | 邮箱: contact@hait-ad.com
+    </section>
+
+    <!-- 关于我们 -->
+    <section id="about" class="section bg-light">
+        <div class="container">
+            <div class="about-grid">
+                <div class="about-content">
+                    <h2 class="section-title">关于HAit传媒</h2>
+                    <p>HAit传媒成立于2015年，是一家专注于品牌建设与数字营销的创新型广告公司。我们拥有一支由品牌策略师、创意总监、数字营销专家和技术开发人员组成的多元化团队。</p>
+                    <p>我们的使命是通过创意与技术的完美结合，帮助客户在日益复杂的市场环境中建立有影响力的品牌。</p>
+                    <div class="stats">
+                        <div class="stat-item">
+                            <span class="stat-number">200+</span>
+                            <span class="stat-label">满意客户</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">50+</span>
+                            <span class="stat-label">行业奖项</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">98%</span>
+                            <span class="stat-label">客户留存率</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-image">
+                    <img src="images/about-team.jpg" alt="我们的团队">
+                </div>
+            </div>
         </div>
-    </div>
+    </section>
+
+    <!-- 页脚 -->
+    <footer id="contact" class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h3>HAit传媒</h3>
+                    <p>创新传播 · 精准营销 · 卓越品牌</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-weixin"></i></a>
+                        <a href="#"><i class="fab fa-weibo"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h3>联系方式</h3>
+                    <ul class="contact-info">
+                        <li><i class="fas fa-map-marker-alt"></i> 上海市浦东新区张江高科技园区</li>
+                        <li><i class="fas fa-phone"></i> 400-123-4567</li>
+                        <li><i class="fas fa-envelope"></i> contact@hait-media.com</li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>快速链接</h3>
+                    <ul class="quick-links">
+                        <li><a href="index.html">首页</a></li>
+                        <li><a href="#services">服务</a></li>
+                        <li><a href="#cases">案例展示</a></li>
+                        <li><a href="blog.html">行业洞察</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2023 HAit传媒集团. 保留所有权利.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
 </body>
 </html>
