@@ -3,44 +3,269 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>品牌策划服务 - HAit 广告传媒</title>
-    <link rel="stylesheet" href="css/style.css">
+    <title>品牌策划服务 | HAit 传媒</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/responsive.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
-    <div class="service-detail-card">
-        <div class="service-hero" style="background-image: url('../images/branding.jpg')">
-            <div class="service-hero-content">
+    <!-- 导航栏 -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="../index.html" class="logo">
+                <img src="../images/logo.png" alt="HAit Logo">
+                <span>HAit 传媒</span>
+            </a>
+            <div class="menu-toggle" id="mobile-menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul class="nav-list">
+                <li><a href="../index.html">首页</a></li>
+                <li><a href="../index.html#services">服务</a></li>
+                <li><a href="../index.html#about">关于我们</a></li>
+                <li><a href="../index.html#cases">成功案例</a></li>
+                <li><a href="../index.html#contact">联系我们</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- 服务英雄区域 -->
+    <header class="service-hero" style="background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('../images/branding.jpg')">
+        <div class="container">
+            <div class="hero-content">
                 <h1>品牌策划服务</h1>
-                <p>打造独特品牌形象，提升市场竞争力</p>
+                <p>打造独特品牌DNA，创造持久品牌价值</p>
             </div>
         </div>
-        
-        <div class="service-detail-content">
-            <a href="index.html" class="back-button">← 返回服务列表</a>
-            
-            <h2>全方位品牌建设解决方案</h2>
-            <p>我们提供从品牌战略到视觉系统的完整服务...</p>
-            
-            <div class="feature-list">
-                <div class="feature">
-                    <h3>品牌战略规划</h3>
-                    <p>通过市场调研和竞争分析，制定品牌战略定位...</p>
+    </header>
+
+    <!-- 服务详情内容 -->
+    <main class="service-detail">
+        <div class="container">
+            <!-- 面包屑导航 -->
+            <nav class="breadcrumb">
+                <a href="../index.html">首页</a>
+                <i class="fas fa-chevron-right"></i>
+                <a href="../index.html#services">服务</a>
+                <i class="fas fa-chevron-right"></i>
+                <span>品牌策划</span>
+            </nav>
+
+            <!-- 服务概述 -->
+            <section class="service-overview">
+                <div class="overview-grid">
+                    <div class="overview-content">
+                        <h2>品牌战略与形象塑造</h2>
+                        <p>在当今竞争激烈的市场环境中，一个强大的品牌是企业最宝贵的资产。我们的品牌策划服务从战略高度出发，为您打造独特的品牌识别系统，建立持久的品牌价值。</p>
+                        <p>我们相信，优秀的品牌不仅仅是漂亮的标志，而是通过一致的品牌体验与消费者建立情感连接的完整生态系统。</p>
+                        <div class="cta-box">
+                            <h3>准备好提升您的品牌了吗？</h3>
+                            <a href="../index.html#contact" class="btn btn-primary">获取免费咨询</a>
+                        </div>
+                    </div>
+                    <div class="overview-image">
+                        <img src="../images/branding-process.jpg" alt="品牌策划流程">
+                    </div>
                 </div>
-                <div class="feature">
-                    <h3>视觉识别系统</h3>
-                    <p>设计包括logo、色彩系统、字体应用等完整VIS...</p>
+            </section>
+
+            <!-- 服务流程 -->
+            <section class="service-process">
+                <h2 class="section-title">我们的品牌策划流程</h2>
+                <div class="process-steps">
+                    <div class="step">
+                        <div class="step-number">1</div>
+                        <h3>品牌发现</h3>
+                        <ul>
+                            <li>市场调研与竞争分析</li>
+                            <li>目标受众画像</li>
+                            <li>品牌现状评估</li>
+                        </ul>
+                    </div>
+                    <div class="step">
+                        <div class="step-number">2</div>
+                        <h3>战略制定</h3>
+                        <ul>
+                            <li>品牌定位与核心价值</li>
+                            <li>品牌架构规划</li>
+                            <li>品牌叙事开发</li>
+                        </ul>
+                    </div>
+                    <div class="step">
+                        <div class="step-number">3</div>
+                        <h3>视觉创造</h3>
+                        <ul>
+                            <li>标志与视觉识别系统</li>
+                            <li>品牌色彩与字体系统</li>
+                            <li>品牌图形语言</li>
+                        </ul>
+                    </div>
+                    <div class="step">
+                        <div class="step-number">4</div>
+                        <h3>实施落地</h3>
+                        <ul>
+                            <li>品牌指南制定</li>
+                            <li>应用系统设计</li>
+                            <li>品牌培训与支持</li>
+                        </ul>
+                    </div>
                 </div>
-            </div>
-            
-            <div class="case-study">
-                <h3>成功案例：XYZ品牌重塑</h3>
-                <p>我们为XYZ公司完成品牌重塑，6个月内品牌认知度提升120%...</p>
-            </div>
+            </section>
+
+            <!-- 服务特色 -->
+            <section class="service-features">
+                <h2 class="section-title">我们的品牌策划优势</h2>
+                <div class="features-grid">
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-chess"></i>
+                        </div>
+                        <h3>战略思维</h3>
+                        <p>将品牌建设与企业战略紧密结合，确保品牌发展支持业务目标</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-lightbulb"></i>
+                        </div>
+                        <h3>创新方法</h3>
+                        <p>运用最新的品牌思维工具和方法论，提供创新解决方案</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-chart-pie"></i>
+                        </div>
+                        <h3>数据驱动</h3>
+                        <p>基于市场数据和消费者洞察做出决策，而非主观判断</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-globe"></i>
+                        </div>
+                        <h3>跨文化视角</h3>
+                        <p>拥有服务国际品牌的经验，理解不同文化背景下的品牌建设</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 成功案例 -->
+            <section class="case-studies">
+                <h2 class="section-title">品牌策划成功案例</h2>
+                <div class="case-tabs">
+                    <div class="tab-buttons">
+                        <button class="tab-btn active" data-tab="case1">新品牌创建</button>
+                        <button class="tab-btn" data-tab="case2">品牌重塑</button>
+                        <button class="tab-btn" data-tab="case3">品牌延伸</button>
+                    </div>
+                    <div class="tab-content">
+                        <div class="case active" id="case1">
+                            <div class="case-grid">
+                                <div class="case-info">
+                                    <h3>悦活酸奶 - 从零打造健康饮品品牌</h3>
+                                    <p><strong>挑战：</strong>在竞争激烈的酸奶市场推出全新品牌</p>
+                                    <p><strong>解决方案：</strong>我们开发了"自然活力"的品牌理念，创造鲜明的视觉识别系统</p>
+                                    <p><strong>成果：</strong>上市6个月市场份额达到8%，成为细分市场前三品牌</p>
+                                    <ul class="case-stats">
+                                        <li>品牌认知度 <span>+150%</span></li>
+                                        <li>市场份额 <span>8%</span></li>
+                                        <li>ROI <span>3:1</span></li>
+                                    </ul>
+                                </div>
+                                <div class="case-images">
+                                    <img src="../images/case-yogurt-1.jpg" alt="悦活酸奶案例">
+                                    <img src="../images/case-yogurt-2.jpg" alt="悦活酸奶包装">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="case" id="case2">
+                            <!-- 案例2内容 -->
+                        </div>
+                        <div class="case" id="case3">
+                            <!-- 案例3内容 -->
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 常见问题 -->
+            <section class="faq">
+                <h2 class="section-title">品牌策划常见问题</h2>
+                <div class="faq-list">
+                    <div class="faq-item">
+                        <button class="faq-question">
+                            品牌策划一般需要多长时间？
+                            <i class="fas fa-chevron-down"></i>
+                        </button>
+                        <div class="faq-answer">
+                            <p>完整的品牌策划项目通常需要3-6个月时间，具体取决于项目复杂度和范围。小型品牌更新可能只需4-8周，而全面的品牌重塑或国际品牌创建可能需要6个月以上。</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <button class="faq-question">
+                            品牌策划包含哪些具体服务？
+                            <i class="fas fa-chevron-down"></i>
+                        </button>
+                        <div class="faq-answer">
+                            <p>我们的品牌策划服务包括：品牌战略规划、品牌定位、命名策略、标志设计、视觉识别系统(VIS)、品牌语言风格、品牌指南制定等。根据客户需求，还可以包括包装设计、品牌环境设计等延伸服务。</p>
+                        </div>
+                    </div>
+                    <!-- 更多FAQ项目 -->
+                </div>
+            </section>
+
+            <!-- 服务咨询 -->
+            <section class="service-cta">
+                <div class="cta-card">
+                    <h2>准备好开始您的品牌之旅了吗？</h2>
+                    <p>我们的品牌专家将为您提供免费咨询，分析您的品牌现状并提供专业建议</p>
+                    <a href="../index.html#contact" class="btn btn-primary btn-large">立即咨询</a>
+                </div>
+            </section>
         </div>
-        
-        <div class="footer">
-            © 2023 HAit 广告传媒 | 联系电话: 123-456789 | 邮箱: contact@hait-ad.com
-        </div>
-    </div>
+    </main>
+
+    <!-- 页脚 -->
+    <footer id="contact" class="footer">
+        <!-- 同首页页脚 -->
+    </footer>
+
+    <script src="../js/main.js"></script>
+    <script>
+        // 案例标签切换
+        const tabBtns = document.querySelectorAll('.tab-btn');
+        tabBtns.forEach(btn => {
+            btn.addEventListener('click', () => {
+                // 移除所有active类
+                document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
+                document.querySelectorAll('.case').forEach(c => c.classList.remove('active'));
+                
+                // 添加active类
+                btn.classList.add('active');
+                const tabId = btn.getAttribute('data-tab');
+                document.getElementById(tabId).classList.add('active');
+            });
+        });
+
+        // FAQ折叠
+        const faqQuestions = document.querySelectorAll('.faq-question');
+        faqQuestions.forEach(question => {
+            question.addEventListener('click', () => {
+                const item = question.parentElement;
+                const answer = question.nextElementSibling;
+                const icon = question.querySelector('i');
+                
+                item.classList.toggle('active');
+                
+                if(item.classList.contains('active')) {
+                    answer.style.maxHeight = answer.scrollHeight + 'px';
+                    icon.classList.replace('fa-chevron-down', 'fa-chevron-up');
+                } else {
+                    answer.style.maxHeight = 0;
+                    icon.classList.replace('fa-chevron-up', 'fa-chevron-down');
+                }
+            });
+        });
+    </script>
 </body>
 </html>
