@@ -3,44 +3,130 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>媒体投放服务 - HAit 广告传媒</title>
-    <link rel="stylesheet" href="css/style.css">
+    <title>媒体投放服务 | HAit 传媒</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/responsive.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
-    <div class="service-detail-card">
-        <div class="service-hero" style="background-image: url('../images/media.jpg')">
-            <div class="service-hero-content">
+    <!-- 导航栏 (同前) -->
+
+    <!-- 媒体投放英雄区域 -->
+    <header class="service-hero" style="background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('../images/media.jpg')">
+        <div class="container">
+            <div class="hero-content">
                 <h1>媒体投放服务</h1>
-                <p>精准触达目标受众的跨媒体投放策略</p>
+                <p>精准触达目标受众的智能广告解决方案</p>
             </div>
         </div>
-        
-        <div class="service-detail-content">
-            <a href="index.html" class="back-button">← 返回服务列表</a>
-            
-            <h2>智能媒体投放解决方案</h2>
-            <p>我们利用大数据分析和程序化购买技术...</p>
-            
-            <div class="feature-list">
-                <div class="feature">
-                    <h3>程序化广告购买</h3>
-                    <p>通过DSP平台实时竞价，精准定位目标用户...</p>
+    </header>
+
+    <!-- 服务详情内容 -->
+    <main class="service-detail">
+        <div class="container">
+            <!-- 面包屑导航 (同前) -->
+
+            <!-- 服务概述 -->
+            <section class="service-overview">
+                <div class="overview-grid">
+                    <div class="overview-content">
+                        <h2>智能媒体投放网络</h2>
+                        <p>在碎片化的媒体环境中，精准投放广告至关重要。我们利用大数据分析和程序化购买技术，确保您的广告预算花在刀刃上，在最合适的时机触达最相关的人群。</p>
+                        <p>我们与主流媒体平台建立了深度合作关系，能够获取优势资源和价格，为您提供最具成本效益的媒体解决方案。</p>
+                        <div class="media-coverage">
+                            <h3>我们覆盖的媒体渠道：</h3>
+                            <ul class="media-channels">
+                                <li><i class="fas fa-check"></i> 腾讯系广告资源</li>
+                                <li><i class="fas fa-check"></i> 字节跳动全平台</li>
+                                <li><i class="fas fa-check"></i> 百度搜索与信息流</li>
+                                <li><i class="fas fa-check"></i> 微博粉丝通</li>
+                                <li><i class="fas fa-check"></i> 视频前贴片广告</li>
+                                <li><i class="fas fa-check"></i> 户外LED大屏</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="overview-image">
+                        <img src="../images/media-network.jpg" alt="媒体投放网络">
+                        <div class="image-caption">我们的全媒体覆盖网络</div>
+                    </div>
                 </div>
-                <div class="feature">
-                    <h3>跨媒体策略</h3>
-                    <p>整合电视、户外、数字媒体等多渠道资源...</p>
+            </section>
+
+            <!-- 投放流程 -->
+            <section class="media-process">
+                <h2 class="section-title">媒体投放流程</h2>
+                <div class="process-visual">
+                    <div class="process-step">
+                        <div class="step-icon">
+                            <i class="fas fa-bullseye"></i>
+                        </div>
+                        <h3>目标设定</h3>
+                        <p>明确营销目标和KPI指标</p>
+                    </div>
+                    <div class="process-arrow">
+                        <i class="fas fa-arrow-right"></i>
+                    </div>
+                    <!-- 更多步骤 -->
                 </div>
-            </div>
-            
-            <div class="case-study">
-                <h3>成功案例：EFG新品上市 campaign</h3>
-                <p>总曝光量超过2亿次，点击率高于行业80%...</p>
-            </div>
+            </section>
+
+            <!-- 广告形式展示 -->
+            <section class="ad-formats">
+                <h2 class="section-title">我们提供的广告形式</h2>
+                <div class="format-slider">
+                    <div class="format-slide">
+                        <img src="../images/ad-format-1.jpg" alt="信息流广告">
+                        <div class="slide-caption">
+                            <h3>信息流广告</h3>
+                            <p>原生融入内容流，提升用户体验和点击率</p>
+                        </div>
+                    </div>
+                    <!-- 更多广告形式 -->
+                </div>
+            </section>
+
+            <!-- 成功案例 (类似前页) -->
+
+            <!-- 效果保障 -->
+            <section class="performance-guarantee">
+                <h2 class="section-title">我们的效果保障</h2>
+                <div class="guarantee-grid">
+                    <div class="guarantee-card">
+                        <div class="guarantee-icon">
+                            <i class="fas fa-shield-alt"></i>
+                        </div>
+                        <h3>透明报告</h3>
+                        <p>实时数据看板，清晰展示每一分钱的投放效果</p>
+                    </div>
+                    <!-- 更多保障卡片 -->
+                </div>
+            </section>
+
+            <!-- 服务咨询 (同前) -->
         </div>
+    </main>
+
+    <!-- 页脚 (同首页) -->
+
+    <script src="../js/main.js"></script>
+    <script>
+        // 广告形式轮播
+        let currentSlide = 0;
+        const slides = document.querySelectorAll('.format-slide');
         
-        <div class="footer">
-            © 2023 HAit 广告传媒 | 联系电话: 123-456789 | 邮箱: contact@hait-ad.com
-        </div>
-    </div>
+        function showSlide(n) {
+            slides.forEach(slide => slide.style.display = 'none');
+            currentSlide = (n + slides.length) % slides.length;
+            slides[currentSlide].style.display = 'block';
+        }
+        
+        // 初始化
+        showSlide(0);
+        
+        // 自动轮播
+        setInterval(() => {
+            showSlide(currentSlide + 1);
+        }, 5000);
+    </script>
 </body>
 </html>
